@@ -1,7 +1,10 @@
+#include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
 #include <ncurses.h>
 #include <string>
+
+using namespace std;
 
 #define BOARD_DIM 20
 #define BOARD_ROWS BOARD_DIM
@@ -12,7 +15,8 @@ int main(int argc, char **argv){
     refresh();
     noecho();
     curs_set(0);
-    
+
+
 	endwin();
 
 	return 0;

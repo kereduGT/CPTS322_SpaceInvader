@@ -13,12 +13,12 @@ class Alien : public Character{
         virtual ~Alien(){
 
         }
-        Alien(string name, int points) : Charcter(name){
+        Alien(string name, int points) : Character(name){
             m_points = points;
         }
         virtual int getPoints(){
             return m_points;
         }
-}
+};
 #endif
 

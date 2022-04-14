@@ -8,6 +8,7 @@ using namespace std;
 class Character{
     protected:
         string m_name;
+        
     
     public: 
         Character(string name){
