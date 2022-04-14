@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/keredu/Documents/Cpts322SpaceInvader'
+make: Leaving directory '/home/keredu/Documents/Cpts322SpaceInvader'
+ 
+Makefile:5: *** missing separator.  Stop.
+
