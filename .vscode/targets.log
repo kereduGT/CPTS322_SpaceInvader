@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-Makefile:5: *** missing separator.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ Makefile:5: *** missing separator.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Apr 14 16:09:52 2022
+# Make data base, printed on Thu Apr 14 19:53:14 2022
 
 # Variables
 
@@ -215,7 +213,7 @@ GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # makefile (from 'Makefile', line 4)
-OBJECTS = main.o  draw.o board.o player.o enemy.o 
+OBJECTS = main.o draw.o board.o player.o enemy.o 
 # environment
 LANG = C
 # environment
@@ -229,9 +227,9 @@ VSCODE_PID = 26019
 
 # Directories
 
-# . (device 2066, inode 15074632): 13 files, no impossibilities.
+# . (device 2066, inode 15074632): 23 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 23 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -266,12 +264,14 @@ Makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 178 B / avg = 9 B
-# current buf: size = 8162 B / used = 178 B / count = 18 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 292 B / avg = 10 B
+# current buf: size = 8162 B / used = 292 B / count = 28 / avg = 10 B
 
-# strcache performance: lookups = 22 / hit rate = 18%
+# strcache performance: lookups = 32 / hit rate = 12%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Thu Apr 14 16:09:52 2022
+# Load=28/8192=0%, Rehash=0, Collisions=1/32=3%
+# Finished Make data base on Thu Apr 14 19:53:14 2022
 
  
+Makefile:5: *** missing separator.  Stop.
+

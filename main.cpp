@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <ncurses.h>
 #include <string>
+#include "board.hpp"
+#include "menu.hpp"
 
 using namespace std;
 
@@ -15,6 +17,17 @@ int main(int argc, char **argv){
     refresh();
     noecho();
     curs_set(0);
+
+    Menu mainMenu(BOARD_ROWS, BOARD_COL);
+
+
+    while(!mainMenu.isOver()){
+        mainMenu.initialize();
+        mainMenu.getMenu();
+        
+        mainMenu.getChoice();
+         
+    }
 
 
 	endwin();
