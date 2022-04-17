@@ -11,13 +11,17 @@ class Board{
         void refresh();
         chtype getInput();        
         void addBorder();
+        void addTitleBoarder();
         void getEmptyCoo(int &x, int &y);
         void add(Draw draw);
         void addAt(int x, int y, chtype ch);
         void remove(Draw Draw);
+        
     private:
         WINDOW *board_win;
         int height, width;
+       
+        
 
         void construct(int height, int width);
 };

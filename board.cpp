@@ -26,6 +26,9 @@ chtype Board::getInput(){
 void Board::addBorder(){
     box(board_win, 0, 0);
 }
+void Board::addTitleBoarder(){
+    whline(board_win, '*', 20);
+}
 void Board::getEmptyCoo(int &y, int &x){
         while((mvwinch(board_win, y = rand() % height, x = rand() % width)) != ' ');
 }
@@ -49,3 +52,4 @@ void Board::construct(int height, int width){
 
     keypad(board_win, true);
 }
+

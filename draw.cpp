@@ -21,3 +21,7 @@ int Draw::getY(){
 chtype Draw::getShape(){
     return shape;
 }
+
+void Draw::drawFigure(int x, int y){
+    
+}

@@ -1,6 +1,6 @@
-#include "gameplay.hpp"
 #include <time.h>
 #include <stdlib.h>
+#include "gameplay.hpp"
 
 Gameplay::Gameplay(){
     gameOver = false;
@@ -8,6 +8,7 @@ Gameplay::Gameplay(){
 
 Gameplay::Gameplay(int height, int width){
     board = Board(height, width);
+    
     initialize();
 
 }
@@ -17,11 +18,20 @@ Gameplay::~Gameplay(){
 void Gameplay::initialize(){
     board.initialize();
     gameOver = false;
+    enemy.drawFigure(10,10);
     player.setXY(5, 19);
     enemy.setXY(1,10);
     enemy.setShape('0');
-    board.add(player);
+    //board.add(player);
+
+    
     board.add(enemy);
+
+    board.addBorder();
+    board.addTitleBoarder();
+
+    
+    
     
 
     player.setAction(right);
@@ -56,9 +66,10 @@ void Gameplay::getInput(){
 void Gameplay::updatePlayer(){
     board.clear();
     board.addBorder();
-    board.add(player);
-   
-    
+    board.addTitleBoarder();
+
+    board.add(player); 
+    board.add(enemy);  
 
 }
 void Gameplay::redraw(){
@@ -72,18 +83,8 @@ bool Gameplay::isOver(){
 void Gameplay::createFloat(){
     enemy.setXY(1,5);
     board.add(enemy);
-    
-    enemy.setXY(1,7);
-    board.add(enemy);
- 
-    enemy.setXY(5,10);
-    board.add(enemy);
- 
-    enemy.setXY(7,10);
-    board.add(enemy);
- 
-    enemy.setXY(9,10);
-    board.add(enemy);
-    
+
+    enemy.drawFigure(10,10);
+   
 
 }

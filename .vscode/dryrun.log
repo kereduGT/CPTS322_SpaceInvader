@@ -1,6 +1,12 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/keredu/Documents/Cpts322SpaceInvader'
+g++ -std=c++0x -Wall   -c -o main.o main.cpp
+g++ -std=c++0x -Wall   -c -o draw.o draw.cpp
+g++ -std=c++0x -Wall   -c -o board.o board.cpp
+g++ -std=c++0x -Wall   -c -o player.o player.cpp
+g++ -std=c++0x -Wall   -c -o enemy.o enemy.cpp
+g++ -std=c++0x -Wall   -c -o menu.o menu.cpp
+g++ -std=c++0x -Wall   -c -o gameplay.o gameplay.cpp
+g++ -std=c++0x -Wall -o main main.o draw.o board.o player.o enemy.o menu.o gameplay.o -lncurses
 make: Leaving directory '/home/keredu/Documents/Cpts322SpaceInvader'
  
-Makefile:5: *** missing separator.  Stop.
-

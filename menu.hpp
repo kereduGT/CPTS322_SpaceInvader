@@ -5,6 +5,7 @@
 #include "board.hpp"
 #include "gameplay.hpp"
 
+
 using namespace std; 
 
 #define BOARD_DIM 20
@@ -16,6 +17,8 @@ class Menu{
         Board board;
         bool isMenuOver;
         Gameplay gameplay;
+       // WINDOW *menuInter;
+        
 
 
     public:
@@ -30,6 +33,7 @@ class Menu{
         bool isOver();
         int centerText(WINDOW *win, int start_row, string text);
         void newGame();
+        int hasTerminalColors();
     
 
 };

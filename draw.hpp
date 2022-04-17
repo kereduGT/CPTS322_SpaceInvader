@@ -8,9 +8,12 @@ class Draw{
         int getX();
         int getY();
         chtype getShape();
-    
+        void drawFigure(int x, int y);
+        
     protected:
         int x, y;
         chtype shape;
+        char* figure;
+    
 
 };
