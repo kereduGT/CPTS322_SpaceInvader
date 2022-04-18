@@ -6,11 +6,13 @@ Enemy::Enemy(){
     this->y = 0;
     this->lives = 0;
     this->shape = 'W';
+    this->points = 0;
 }
 
-Enemy::Enemy(int x, int y){
+Enemy::Enemy(int x, int y, int points){
     this->x = x;
     this->y = y;
     this->lives = 1;
     this->shape = 'W';
+    this->points = points;
 }
